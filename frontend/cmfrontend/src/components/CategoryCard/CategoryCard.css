@@ -1,0 +1,27 @@
+.cat-card img {
+    width: 70%;
+    /* box-shadow: 5px 10px 10px 10px black inset; */
+}
+
+.cat-overlay {
+    position: absolute;
+    /* text-align: center; */
+    color: white;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    /* transform: translateX(-50%); */
+}
+
+.cat-card {
+    position: relative;
+}
+
+.cat-name {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-15%);
+}
+

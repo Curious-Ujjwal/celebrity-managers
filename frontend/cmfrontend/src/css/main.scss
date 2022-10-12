@@ -1,0 +1,629 @@
+//Colours
+$colors: (
+accent: #35EAD8,
+bg: #39246A,
+white: #FFFFFF,
+black: #000000
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//!Colours
+
+//Mixins
+@mixin tablet {
+  @media (max-width: 992px) { @content; }
+}
+
+@mixin phone {
+  @media (max-width: 720px) { @content; }
+}
+//!Mixins
+
+//Grammarly
+grammarly-btn {display:none!important;}
+
+
+//Search Bar
+form {
+  background-color: #E0E7FF;
+  width: 650px;
+  height: 65px;
+  border-radius: 20px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+
+}
+
+input {
+  all: unset;
+  font: 18px;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.34);
+  opacity: 0.7;
+}
+
+svg {
+  color: #39246A;
+  fill: currentColor;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+//!Search bar
+
+//Default Declarations
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gilmer', sans-serif;
+  background-color: var(--bg);
+}
+
+p {
+  font-size: clamp (45ch, 50%, 75ch);
+}
+
+.parent {
+  // position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden !important;
+}
+
+.herosection {
+  width: 5rem !important;
+}
+
+.title {
+    font-weight: bold;
+    font-size: calc(1rem + 2.5vw);
+
+     &.highlight {
+      color: #35EAD8;
+   }
+}
+//!Default Declarations
+
+//Nav-Pills
+.nav-justified .nav-item .nav-link {
+    width: 75%;
+}
+.nav-pills .nav-link.active {
+    color: #39246A;
+    background-color: #35EAD8;
+}
+
+.nav-pills .nav-link {
+    border-radius: 10px;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.child {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+//avatars
+.avatar-card {
+  width:250px;
+  background: rgba(0,0,0,0);
+  border-radius: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  color: #35EAD8;
+  text-align: center;
+}
+
+//Navigation bar
+.navbar-nav > li {
+    padding-right: 1.5vw;
+}
+.nav-item{
+   text-align: right;
+}
+
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+.navbar {
+  background: rgba(0,0,0,0.0);
+}
+
+.nav-link{
+  color: color(white);
+}
+
+.nav-link:hover{
+  transition: all .35s;
+  color: color(white);
+  }
+
+.navbar-fixed-top.scrolled {
+  transition: background-color 200ms linear;
+}
+
+.navbar-index.scrolled {
+  // background: rgba(0,0,0,0.7);
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: color(white);
+}
+
+//Ishan_Hover
+#soundsslike {
+  background: url(../src/images/Ishan/Soundsslike.png) center center no-repeat;
+  background-size: contain;
+  height: 590px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#soundsslike:hover {
+  background-image: url("../src/images/Ishan/Soundsslike_Hover.png");
+}
+
+#soundscapeworld {
+  background: url(../src/images/Ishan/SoundscapeWorld.png) center center no-repeat;
+  background-size: contain;
+  height: 590px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#soundscapeworld:hover {
+  background-image: url("../src/images/Ishan/SoundscapeWorld_Hover.png");
+}
+
+//Roff_Hover
+#roff_homepage {
+  background: url(../src/images/Roff/Heuristic1.png) center center no-repeat;
+  background-size: contain;
+  height: 1535px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_homepage:hover {
+  background-image: url("../src/images/Roff/Heuristic1_Hover.png");
+}
+
+#roff_whyroff {
+  background: url(../src/images/Roff/Heuristic2.png) center center no-repeat;
+  background-size: contain;
+  height: 648px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_whyroff:hover {
+  background-image: url("../src/images/Roff/Heuristic2_Hover.png");
+}
+
+#roff_solutions {
+  background: url(../src/images/Roff/Heuristic3.png) center center no-repeat;
+  background-size: contain;
+  height: 1080px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_solutions:hover {
+  background-image: url("../src/images/Roff/Heuristic3_Hover.png");
+}
+
+#roff_products {
+  background: url(../src/images/Roff/Heuristic4.png) center center no-repeat;
+  background-size: contain;
+  height: 646px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#roff_products:hover {
+  background-image: url("../src/images/Roff/Heuristic4_Hover.png");
+}
+
+//Projects-Tab
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 55%;
+  border-radius: 20px!important;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s;
+}
+
+.hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s;
+  pointer-events: none;
+}
+
+.hover-1 .hover-overlay {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+  bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-1:hover img {
+  left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+
+  background: rgba(0, 0, 0, 0.5);
+}
+//!Projects-Tab
+
+//rotate
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.nav-link-main:hover { opacity: 1;}
+
+//Dots
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.carousel-control-prev {
+    left: -75px !important;
+}
+
+.carousel-control-next {
+    right: -75px !important;
+}
+
+//Image-Carousel
+.carousel-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+    border-radius: 2vh 2vh 2vh 2vh;
+    overflow: hidden;
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0);
+  pointer-events: none;
+}
+
+.carousel-caption {
+    pointer-events: none;
+}
+//!Image-Carousel
+
+
+
+
+//Scroll to Section
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+//!Scroll to Section
+
+.no-top-padding
+{padding-top: 0 !important}
+
+//Landing Page Header
+
+#Header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  height: 100%;
+}
+
+#Projects {
+  padding-bottom: 1vh;
+}
+
+#Hero {
+  @include tablet {
+    padding-bottom: 30vh;
+  }
+
+  @include phone {
+    padding-top: 20vh;
+  }
+}
+
+#face {
+  max-width: 60vh;
+  position: relative;
+  right: 16vw;
+  z-index: 1;
+
+    @include tablet {
+      right: 30vw;
+      height: 81.5vh;
+      max-width: 81.5vh;
+    }
+}
+//!Landing Page Header
+
+//Scroll Progress Bar
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* The progress bar (scroll indicator) */
+.progress {
+  height: 3px;
+  width: 0%;
+}
+
+//!Sroll Progress Bar
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: color(bg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: color(white);
+    font-family: 'Gilmer', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0.02rem;
+
+      .container, .container-fluid {
+        @include tablet {
+        overflow-y: hidden; }
+      }
+
+      a {
+        font-family: 'Gilmer', sans-serif;
+        font-weight: 500;
+        }
+
+      .btn{
+        font-family: 'Gilmer', sans-serif;
+        font-weight: 300;
+        font-size: 1.25rem;
+        }
+
+      h1 {
+         font-family: 'Gilmer', sans-serif;
+         font-weight: 900;
+        }
+
+      h2, h3, h4, h5, h6 {
+        font-family: 'Gilmer', sans-serif;
+        font-weight: bold;
+      }
+
+      h6 {
+        font-size: 1.1rem;
+      }
+
+      .process h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+      }
+
+    .section-title h3 {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+    }
+
+    .section-title h3::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 70px;
+      height: 9px;
+      bottom: 0;
+      left: 5px;
+    }
+
+    .st-roff h3::after {
+      background: #799400;
+    }
+
+    .st-nutanix h3::after {
+      background: #034EA2;
+    }
+
+    .st-onestop h3::after {
+      background: #4C81F6;
+    }
+
+    .st-link h3::after {
+      background: #F3B822;
+    }
+
+    .st-ishan h3::after {
+      background: #DB2C47;
+    }
+
+    a:hover{
+      transition: all .35s;
+      color: color(primary);
+      }
+
+    a:active{
+      color: color(primary);
+    }
+
+    .btn {
+      position: relative;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: border 0.1s ease-in-out;
+      padding: 0.5rem 2rem;
+    }
+
+    .btn:hover {
+      transition: all .35s;
+    }
+
+    .btn-genefit:hover, .btn-genefit:focus {
+      border-color: color(orange);
+      background-color: color(orange);
+    }
+
+    .btn-roff:hover, .btn-roff:focus {
+      border-color: color(roffgreen);
+      background-color: color(roffgreen);
+    }
+
+    .btn-ishan:hover, .btn-ishan:focus {
+      border-color: color(ishan);
+      background-color: color(ishan);
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .centermob
+        {
+          display: flex;
+          justify-content: center;
+        }
+
+        #Experience, #Leadership, #Education
+        {
+          text-align: center;
+        }
+
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .position {
+          margin-top: 5%;
+        }
+    }
+}
+
+cloudflare-app {
+  background-color: rgba(65, 65, 65, 0.9);
+}
+
+//Tooltip
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color:  rgba(251, 251, 251, 0);
+}

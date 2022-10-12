@@ -1,0 +1,165 @@
+/* Navbar Styling starts */
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+.brand > * {
+    margin: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.brandname {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.brandlogo {
+    font-weight: 900;
+    font-size: 40px;
+    align-items: center;
+}
+ul > li:not(:first-child):not(:last-child) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul > li:first-child {
+    margin-left: 10px;
+}
+ul > li:last-child {
+    margin-right: 32px;
+}
+/* Navbar styling ends */
+
+/* Common classes to be used for styling */
+* {
+    /* font-family: 'Gilmer-Regular'; */
+    font-size: 1.1rem;
+}
+.frame-title {
+    font-size: 45px;
+}
+.sky-blue-color {
+    color: #35EAD8;
+}
+
+/* This section of common classes ends */
+
+/* ++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++ */
+
+/* Hero section starts */
+.main-area input {
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+.star-search {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.star-search > p:not(:last-child) {
+    font-size: 45px;
+    line-height: 1em;
+    font-weight: 600;
+}
+.star-search > p:nth-last-of-type(1) {
+    font-size: 15px;
+    line-height: inherit;
+    font-weight: normal;
+}
+.cm-img {
+    object-fit: contain;
+}
+/* Hero section ends */
+
+/* Page content general styling starts */
+.main-area > .row:not(:first-child) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.main-area > .row:first-child {
+    margin-bottom: 40px;
+}
+.main-area > .row:nth-last-of-type(1) {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+/* Page content general styling ends */
+
+/* Contact box styling starts */
+.contact-box {
+    border: 10px solid white;
+    border-radius: 20px;
+    background-color: white;
+    color: #39246A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.small-text {
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.icon-slab {
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.contacticons {
+    display: flex;
+    align-items: center;
+}
+.contacticons > span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contacticons > span:first-child {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.contacticons > span:last-child {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.contacticons span img {
+    height: 30px;
+    width: 30px;
+}
+.contactbutton {
+    white-space: nowrap;
+    padding: 6px 50px 6px;
+    background-color: #39246A;
+    color: white;
+    border-radius: 10px;
+    width: max-content;
+    
+}
+/* Contact box syling ends */
+
+/* Footer text styling starts */
+.footer-logo {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+.footer-logo p:first-child {
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.footer-brand {
+    font-size: 60px;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+.copyright-text {
+    font-size: 10px;
+}
+/* Footer text styling ends */

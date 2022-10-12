@@ -1,0 +1,21 @@
+.intro-card {
+    width: 90%;
+}
+
+.intro-card img {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.celebrity-name {
+    text-align: center;
+    font-family: 'Gilmer-Bold';
+    font-size: 1.2rem;
+}
+
+.celebrity-work {
+    text-align: center;
+    color: #35EAD8;
+    margin-top: -10px;
+}
